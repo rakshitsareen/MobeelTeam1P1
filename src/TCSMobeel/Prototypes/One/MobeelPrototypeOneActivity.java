@@ -24,7 +24,7 @@ public class MobeelPrototypeOneActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        OnClickListener uponDone=new executeInput();
+        OnClickListener uponDone=new ExecuteInput();
         //Get The references
         fly1=(EditText)findViewById(R.id.editTextFly1);
        
@@ -37,10 +37,38 @@ public class MobeelPrototypeOneActivity extends Activity {
        loopInc=(EditText)findViewById(R.id.editTextIncrement);
         loopLimit=(EditText)findViewById(R.id.editTextLimit);
         execute=(Button)findViewById(R.id.buttonDone);
-        
         execute.setOnClickListener(uponDone);
-    }
-	class executeInput implements OnClickListener  //TODO: This should be a separate class,not an inner class
+        flip=(Button)findViewById(R.id.buttonFlip1);
+        flip.setOnClickListener(new Flipper());
+	}
+	class  Flipper implements OnClickListener
+	{
+
+		@Override
+		public void onClick(View v) {
+			final Dialog d = new Dialog(MobeelPrototypeOneActivity.this);
+			Window w = d.getWindow();
+			w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+					WindowManager.LayoutParams.FLAG_FULLSCREEN);
+			w.setFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND,
+					WindowManager.LayoutParams.FLAG_BLUR_BEHIND);
+			d.setTitle("CodePlay");
+			d.setContentView(R.layout.level1layout);
+			Button flip = (Button) d.findViewById(R.id.buttonFlip);
+			
+			
+			flip.setOnClickListener(new OnClickListener() {
+				public void onClick(View v) {
+					d.dismiss();
+				}
+			});
+			d.show();
+		}
+			
+		}
+		
+
+	class ExecuteInput implements OnClickListener  //TODO: This should be a separate class,not an inner class
 	{
 
 		Integer s1,s2,lini,linc,ll,f1,f2,f3,f4;

@@ -17,7 +17,8 @@ public final class R {
     public static final class id {
         public static final int buttonDone=0x7f05001e;
         public static final int buttonFlip=0x7f050002;
-        public static final int buttonOk=0x7f050020;
+        public static final int buttonFlip1=0x7f05001f;
+        public static final int buttonOk=0x7f050021;
         public static final int editTextFly1=0x7f050013;
         public static final int editTextFly2=0x7f050016;
         public static final int editTextFly3=0x7f050019;
@@ -38,7 +39,7 @@ public final class R {
         public static final int textViewFly3_2=0x7f05001a;
         public static final int textViewFly4=0x7f05001b;
         public static final int textViewFly4_2=0x7f05001d;
-        public static final int textViewResult=0x7f05001f;
+        public static final int textViewResult=0x7f050020;
         public static final int textViewS1=0x7f050004;
         public static final int textViewS1_2=0x7f050006;
         public static final int textViewS2=0x7f050007;

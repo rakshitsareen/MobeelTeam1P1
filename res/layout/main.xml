@@ -52,6 +52,7 @@
     	
     	<!--   Ended Fly -->
     	<Button android:layout_width="wrap_content" android:text="Execute Plan" android:id="@+id/buttonDone" android:layout_height="wrap_content"  android:layout_below="@+id/editTextFly4"></Button>
+    	<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/buttonFlip1" android:text="Flip"  android:layout_toRightOf="@+id/buttonDone" android:layout_alignTop="@+id/buttonDone"></Button>
     </RelativeLayout>
 </ScrollView>
 
