@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:weightSum="1"  android:layout_width="wrap_content">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"> 
+       <RelativeLayout  android:background="#aaaafa" android:id="@+id/relativeLayout1" android:layout_weight="0.96" android:layout_height="488dp" android:layout_width="313dp">
+        <TextView android:id="@+id/textViewS1" android:layout_width="wrap_content" android:text="Move" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_marginTop="23dp"></TextView>
+    	<EditText   android:text="3" android:inputType="number" android:width="50dip" android:layout_width="wrap_content"  android:layout_toRightOf="@+id/textViewS1"  android:id="@+id/editTextS1" android:layout_height="wrap_content"  android:layout_alignTop="@+id/textViewS1" android:layout_marginLeft="10dip">
+    		<requestFocus></requestFocus>
+    	</EditText>
+    	
+    	<TextView android:id="@+id/textViewS1_2"  android:layout_width="wrap_content" android:layout_toRightOf="@+id/editTextS1" android:text="steps forward" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_alignTop="@+id/textViewS1"  android:layout_marginLeft="10dip"></TextView>
+    	<TextView android:id="@+id/textViewS2" android:layout_width="wrap_content" android:text="Next,you have to jump through!" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_below="@+id/editTextS1" android:layout_alignParentLeft="true" android:layout_marginTop="20dp"></TextView>
+    	<TextView android:id="@+id/textViewS2_2" android:layout_width="wrap_content" android:text="Start with a jump power of " android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_below="@+id/textViewS2" android:layout_alignParentLeft="true" android:layout_marginTop="20dp"></TextView>
+    	<EditText android:text="3" android:inputType="number" android:layout_width="wrap_content" android:id="@+id/editTextInitCount" android:layout_height="wrap_content" android:layout_alignTop="@+id/textViewS2_2" android:layout_toRightOf="@+id/textViewS2_2" android:width="42dp"><requestFocus></requestFocus></EditText>
+    	<TextView android:id="@+id/textViewS3" android:layout_width="wrap_content" android:text="Add" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_below="@+id/textViewS2_2" android:layout_alignParentLeft="true" android:layout_marginTop="20dp"></TextView>
+    	<EditText android:text="3" android:inputType="number" android:layout_width="wrap_content" android:id="@+id/editTextIncrement" android:layout_height="wrap_content" android:layout_alignTop="@+id/textViewS3" android:layout_toRightOf="@+id/textViewS3" android:width="42dp" android:layout_marginLeft="55dp"><requestFocus></requestFocus></EditText>
+    	<TextView android:id="@+id/textViewS3_2" android:layout_width="wrap_content" android:text="To the power each time " android:textAppearance="?android:attr/textAppearanceMedium" android:layout_alignTop="@+id/editTextIncrement" android:layout_height="wrap_content" android:layout_toRightOf="@+id/editTextIncrement" android:layout_marginLeft="10dp"></TextView>
+    	<TextView android:id="@+id/textViewS4" android:layout_width="wrap_content" android:text="Until you reach a power of " android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_below="@+id/editTextIncrement" android:layout_alignParentLeft="true" android:layout_marginTop="20dp"></TextView>
+    	<EditText android:text="3" android:inputType="number" android:layout_width="wrap_content" android:id="@+id/editTextLimit" android:layout_height="wrap_content" android:layout_alignTop="@+id/textViewS4" android:layout_toRightOf="@+id/textViewS4" android:width="42dp" android:layout_marginLeft="10dp"><requestFocus></requestFocus></EditText>
+    	<TextView android:id="@+id/textViewS5" android:layout_width="wrap_content" android:text="Move" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content"  android:layout_alignParentLeft="true" android:layout_below="@+id/editTextLimit" android:layout_marginTop="23dp"></TextView>
+    	<EditText android:text="3" android:inputType="number" android:width="50dip" android:layout_width="wrap_content"  android:layout_toRightOf="@+id/textViewS5"  android:id="@+id/editTextS5" android:layout_height="wrap_content"  android:layout_alignTop="@+id/textViewS5" android:layout_marginLeft="10dip">
+    		<requestFocus></requestFocus>
+    	</EditText>
+    	<TextView android:id="@+id/textViewS5_2"  android:layout_width="wrap_content" android:layout_toRightOf="@+id/editTextS5" android:text="steps forward" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_alignTop="@+id/textViewS5"  android:layout_marginLeft="10dip"></TextView>
+    	<!-- Starting with fly -->
+    	<TextView android:id="@+id/textViewFly1" android:layout_width="wrap_content" android:text="Fly" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content"  android:layout_alignParentLeft="true" android:layout_below="@+id/editTextS5" android:layout_marginTop="23dp"></TextView>
+    	<EditText android:text="3" android:inputType="number" android:width="50dip" android:layout_width="wrap_content"  android:layout_toRightOf="@+id/textViewFly1"  android:id="@+id/editTextFly1" android:layout_height="wrap_content"  android:layout_alignTop="@+id/textViewFly1" android:layout_marginLeft="10dip">
+    		<requestFocus></requestFocus>
+    	</EditText>
+    	<TextView android:id="@+id/textViewFly1_2"  android:layout_width="wrap_content" android:layout_toRightOf="@+id/editTextS5" android:text="steps ahead" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_alignTop="@+id/textViewFly1"  android:layout_marginLeft="10dip"></TextView>
+    	
+    	<TextView android:id="@+id/textViewFly2" android:layout_width="wrap_content" android:text="Move" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content"  android:layout_alignParentLeft="true" android:layout_below="@+id/editTextFly1" android:layout_marginTop="23dp"></TextView>
+    	<EditText android:text="3" android:inputType="number" android:width="50dip" android:layout_width="wrap_content"  android:layout_toRightOf="@+id/textViewFly2"  android:id="@+id/editTextFly2" android:layout_height="wrap_content"  android:layout_alignTop="@+id/textViewFly2" android:layout_marginLeft="10dip" android:layout_marginTop="20dip">
+    		<requestFocus></requestFocus>
+    	</EditText>
+    	<TextView android:id="@+id/textViewFly2_2"  android:layout_width="wrap_content" android:layout_toRightOf="@+id/editTextS5" android:text="steps forward" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_alignTop="@+id/textViewFly2"  android:layout_marginLeft="10dip"></TextView>
+    	
+    	<TextView android:id="@+id/textViewFly3" android:layout_width="wrap_content" android:text="Fly" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content"  android:layout_alignParentLeft="true" android:layout_below="@+id/editTextFly2" android:layout_marginTop="23dp"></TextView>
+    	<EditText android:text="3" android:inputType="number" android:width="50dip" android:layout_width="wrap_content"  android:layout_toRightOf="@+id/textViewFly3"  android:id="@+id/editTextFly3" android:layout_height="wrap_content"  android:layout_alignTop="@+id/textViewFly3" android:layout_marginLeft="10dip">
+    		<requestFocus></requestFocus>
+    	</EditText>
+    	<TextView android:id="@+id/textViewFly3_2"  android:layout_width="wrap_content" android:layout_toRightOf="@+id/editTextS5" android:text="steps ahead" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_alignTop="@+id/textViewFly3"  android:layout_marginLeft="10dip"></TextView>
+    	
+    	
+    	<TextView android:id="@+id/textViewFly4" android:layout_width="wrap_content" android:text="Move" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content"  android:layout_alignParentLeft="true" android:layout_below="@+id/editTextFly3" android:layout_marginTop="23dp"></TextView>
+    	<EditText android:text="3" android:inputType="number" android:width="50dip" android:layout_width="wrap_content"  android:layout_toRightOf="@+id/textViewFly4"  android:id="@+id/editTextFly4" android:layout_height="wrap_content"  android:layout_alignTop="@+id/textViewFly4" android:layout_marginLeft="10dip">
+    		<requestFocus></requestFocus>
+    	</EditText>
+    	<TextView android:id="@+id/textViewFly4_2"  android:layout_width="wrap_content" android:layout_toRightOf="@+id/editTextS5" android:text="steps forward" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_alignTop="@+id/textViewFly4"  android:layout_marginLeft="10dip"></TextView>
+    	
+    	<!--   Ended Fly -->
+    	<Button android:layout_width="wrap_content" android:text="Execute Plan" android:id="@+id/buttonDone" android:layout_height="wrap_content"  android:layout_below="@+id/editTextFly4"></Button>
+    </RelativeLayout>
+</ScrollView>
+
+</LinearLayout>
